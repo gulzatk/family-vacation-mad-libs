@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" href="/css/master.css">
+    <link href="css/styles.css" rel="stylesheet" href="/css/master.css">
+    <link href="js/jquery-3.3.1.js" rel="stylesheet" href="/css/master.css">
+    <link href="js/scripts.js" rel="stylesheet" href="/css/master.css">
+    <title>Mad-Libs</title>
+  </head>
+
+
+  <body>
+    <div class="container">
+      <h1>Fill in the blanks to write family vacation story</h1>
+      <div>
+      <form id="formOne">
+        <div class="form-group">
+          <label for="last-name">Last name</label>
+          <input type="text" class="form-control" id="last-name">
+        </div>
+
+        <div class="form-group">
+          <label for="location">Location</label>
+          <input type="text" class="form-control" id="location">
+        </div>
+
+        <div class="form-group">
+          <label for="activity">Activity</label>
+          <input type="text" class="form-control" id="activity">
+        </div>
+
+        <div class="form-group">
+          <label for="food">Food</label>
+          <input type="text" class="form-control" id="food">
+        </div>
+
+        <div class="form-group">
+          <label for="adjective">Adjective</label>
+          <input type="text" class="form-control" id="adjective">
+        </div>
+
+        <button type="submit" class="btn">Show me the story</button>
+
+      </form>
+    </div>
+
+    <div id="story">
+      <h1>Family Vacation</h1>
+        <p>
+        The <span class="last-name"></span> family went to <span calss="location"></span>
+        last year on vacation. They <span class="activity"></span> the first day and ate a dinner of
+        <span class="food"></span>. They had a <span class="adjective"></span> time!
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
