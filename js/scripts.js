@@ -1,17 +1,12 @@
 
 $(document).ready(function() {
   $("#formOne").submit(function(event) {
-    var lastnameInput = $("input#last-name").val();
-    var locationInput = $("input#location").val();
-    var activityInput= $("input#activity").val();
-    var foodInput = $("input#food").val();
-    var adjectiveInput = $("input#adjective").val();
+    var blanks = ["last-name", "location", "activity", "food", "adjective"]
 
-    $(".last-name").text(lastnameInput);
-    $(".location").text(locationInput);
-    $(".activity").text(activityInput);
-    $(".food").text(foodInput);
-    $(".adjective").text(adjectiveInput);
+    blanks.forEach(function(blank) {
+      var userInput = $("input#" + blank).val();
+      $("." + blank).text(userInput);
+    });
 
     $("#story").show();
 
